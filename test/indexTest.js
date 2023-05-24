@@ -75,7 +75,7 @@ describe( "submitData()", () => {
 
   it( "handles a failed POST request using catch, appends the error message to the DOM", async function () {
     let message = 'Unauthorized Access'
-    nock( 'http://localhost:3000' )
+    nock('http://localhost:3000')
       .post( '/users' )
       .replyWithError( {
         message: message,
